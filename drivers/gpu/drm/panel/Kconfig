@@ -278,6 +278,8 @@ config DRM_PANEL_HUAXING_NT36672C
 	depends on OF
 	depends on DRM_MIPI_DSI
 	depends on BACKLIGHT_CLASS_DEVICE
+	select DRM_DISPLAY_DSC_HELPER
+	select DRM_DISPLAY_HELPER
 	select VIDEOMODE_HELPERS
 	help
 	  Say Y or M here if you want to enable support for the Huaxing FHD
@@ -919,6 +921,8 @@ config DRM_PANEL_SAMSUNG_AMS667YR01
 	depends on OF
 	depends on DRM_MIPI_DSI
 	depends on BACKLIGHT_CLASS_DEVICE
+	select DRM_DISPLAY_DSC_HELPER
+	select DRM_DISPLAY_HELPER
 	help
 	  Say Y or M here if you want to enable support for the
 	  Samsung AMS667YR01 FHD Plus (2400x1080@120Hz) video mode panel.
@@ -1335,6 +1339,8 @@ config DRM_PANEL_TIANMA_NT36672C
 	depends on OF
 	depends on DRM_MIPI_DSI
 	depends on BACKLIGHT_CLASS_DEVICE
+	select DRM_DISPLAY_DSC_HELPER
+	select DRM_DISPLAY_HELPER
 	select VIDEOMODE_HELPERS
 	help
 	  Say Y or M here if you want to enable support for the Tianma FHD
