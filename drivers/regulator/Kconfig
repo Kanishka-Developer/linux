@@ -1858,6 +1858,15 @@ config REGULATOR_VQMMC_IPQ4019
 	  This driver provides support for the VQMMC LDO I/0
 	  voltage regulator of the IPQ4019 SD/EMMC controller.
 
+config REGULATOR_WL2866D
+	tristate "Will Semiconductor WL2866D camera LDO"
+	depends on I2C && OF
+	select REGMAP_I2C
+	help
+	  Driver for the WL2866D camera power IC (two DVDD and two AVDD
+	  LDOs behind I2C), found on Xiaomi SM7150 phones such as the
+	  POCO X3 NFC and the Redmi Note 10 Pro.
+
 config REGULATOR_WM831X
 	tristate "Wolfson Microelectronics WM831x PMIC regulators"
 	depends on MFD_WM831X
